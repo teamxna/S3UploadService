@@ -33,14 +33,14 @@ public class S3UploadService extends IntentService {
     private static final String TAG = "S3UploadService";
     private static final boolean VERBOSE = true;
 
-    private static final String ACTION_UPLOAD = "com.kanvas.android.services.live.action.UPLOAD";
+    private static final String ACTION_UPLOAD = "com.onecode.android.services.live.action.UPLOAD";
 
     public static final String EXTRA_SERIALIZABLE = "EXTRA_SERIALIZABLE";
 
-    private static final String EXTRA_S3_BUCKET_DATA = "com.kanvas.android.services.live.extra.S3_BUCKET_DATA";
-    private static final String EXTRA_FILE = "com.kanvas.android.services.live.extra.FILE";
-    private static final String EXTRA_DELETE_FILE = "com.kanvas.android.services.live.extra.DELETE_FILE";
-    private static final String EXTRA_S3_CALLBACK = "com.kanvas.android.services.live.extra.S3_CALLBACK";
+    private static final String EXTRA_S3_BUCKET_DATA = "com.onecode.android.services.live.extra.S3_BUCKET_DATA";
+    private static final String EXTRA_FILE = "com.onecode.android.services.live.extra.FILE";
+    private static final String EXTRA_DELETE_FILE = "com.onecode.android.services.live.extra.DELETE_FILE";
+    private static final String EXTRA_S3_CALLBACK = "com.onecode.android.services.live.extra.S3_CALLBACK";
 
     public S3UploadService() {
         super(TAG);
