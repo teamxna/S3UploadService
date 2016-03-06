@@ -54,7 +54,7 @@ Add the JitPack repository to your root build.gradle:
 Add the Gradle dependency:
 ```groovy
 	dependencies {
-		compile 'com.github.goodengineer:S3-Upload-Service:1.0.0@aar'
+		compile 'com.github.goodengineer:S3UploadService:1.0.0@aar'
 	}
 ```
 Declare S3UploadService in your manifest:
