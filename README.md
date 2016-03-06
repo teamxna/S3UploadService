@@ -13,7 +13,7 @@ Build an instance of S3BucketData and make a call to S3UploadService.upload():
                 .setRegion(region)
                 .build();
                 
-                S3UploadService.upload(getActivity(), s3BucketData, file, null);
+        S3UploadService.upload(getActivity(), s3BucketData, file, null);
 ```
 where key is:
 ```java
