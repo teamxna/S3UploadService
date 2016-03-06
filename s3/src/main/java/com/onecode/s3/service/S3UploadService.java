@@ -59,6 +59,10 @@ public class S3UploadService extends IntentService {
         context.startService(intent);
     }
 
+    public static void upload(Context context, S3BucketData s3BucketData, File file, boolean deleteFileAfter) {
+        upload(context, s3BucketData, file, deleteFileAfter, null);
+    }
+
     //    region onHandleIntent()
 
     /*
