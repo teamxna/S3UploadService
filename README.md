@@ -13,12 +13,14 @@ Build an instance of S3BucketData and make a call to S3UploadService.upload():
                 .setRegion(region)
                 .build();
                 
-        S3UploadService.upload(getActivity(), s3BucketData, file, null);
+        S3UploadService.upload(context, s3BucketData, file, null);
 ```
 where key is:
 ```java
         key = pathToFile + "/" + fileName;
 ```
+key could be just the fileName
+
 keep in mind that the final URL will have the following format:
 ```java
         finalUrl = "https://" + bucket + ".s3.amazonaws.com/" + key;
