@@ -17,7 +17,7 @@ Build an instance of S3BucketData and make a call to S3UploadService.upload():
 ```
 where key is:
 ```java
-        key = bucketKey + "/" + fileName;
+        key = pathToFile + "/" + fileName;
 ```
 keep in mind that the final URL will have the following format:
 ```java
