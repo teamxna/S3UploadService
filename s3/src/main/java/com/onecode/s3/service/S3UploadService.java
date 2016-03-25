@@ -102,7 +102,7 @@ public class S3UploadService extends IntentService {
             e.printStackTrace();
         } catch (AmazonS3Exception s3e) {
             // Possible Bad Digest. Retry
-            Log.w(TAG, "AmazonS3Exception. retrying.");
+            Log.w(TAG, s3e.toString());
         }
 
 //        It's only when the s3Callback provided isn't null that we will send the broadcast message
